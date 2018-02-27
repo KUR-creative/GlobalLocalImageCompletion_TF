@@ -16,6 +16,11 @@ class network():
 
         self.alpha = args.alpha
 
+        #print(type(args.input_height))
+        #print(type(args.input_width))
+
+        args.input_height = int(args.input_height)
+        args.input_width = int(args.input_width)
         #prepare training data
         self.real_img, self.perturbed_img, self.mask, self.coord, self.pads, self.data_count = load_train_data(args)
         # self.orig_img, self.test_img, self.test_mask, self.test_data_count = load_test_data(args)
