@@ -2,3 +2,7 @@
 data/
 checkpoints/
 graphs/
+*.taghl
+tags
+.env
+*.swp
